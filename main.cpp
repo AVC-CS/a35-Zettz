@@ -12,18 +12,18 @@ int main()
     // TODO: seed the random number generator with time(0)
     srand(time(0));
     // TODO: generate 3 random numbers between 0 and 99
-    num1 = rand() % 100;
-    num2 = rand() % 100;
-    num3 = rand() % 100;
+    rdnum1 = rand() % 100;
+    rdnum2 = rand() % 100;
+    rdnum3 = rand() % 100;
 
     // TODO: compute the total summation
-    total = num1 + num2 + num3;
+    total = rdnum1 + rdnum2 + rdnum3;
 
     // TODO: print the 3 random numbers on the first line
     cout << fixed << setprecision(2);
-    cout << "The three random numbers are: " << num1 << ", " << num2 << ", and " << num3 << endl;
+    cout << "The three random numbers are: " << rdnum1 << ", " << rdnum2 << ", and " << rdnum3 << endl;
 
     // TODO: print the total and average (integer division) on the second line
-
+    cout << "The total is: " << total << " The average is: " << total / 3 << endl;
     return 0;
 }
